@@ -1,0 +1,59 @@
+#about{
+  width: 100%;
+  height: 800px;
+}
+#header{
+font-family: 'Lobster', cursive;
+
+  background-image: url(../bg.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+}
+nav{
+  z-index: 10;
+
+  padding: 0px 50px;
+  position: fixed;
+  background-color: rgba(0,0,0,0);
+}
+nav li:hover{
+
+ background-color: orange;
+}
+.imgmenu{
+  margin-left: 20px;
+
+
+width: 400px;
+}
+.imgmenu1{
+
+  padding-top:40px;
+width: 400px;
+}
+.textmenu{
+    margin-left: 20px;
+  font-family: 'Exo', sans-serif;
+  margin-top: 10px;
+  font-size: 23px;
+}
+.line{
+  border: 1px solid black;
+  background-color: black;
+ height: 1px;
+
+  width: 300px;
+}
+#menu{
+  height: 1000px;
+}
+.tempat{
+  box-shadow: 1px 4px 40px  4px  black;
+}
+#tempat{
+
+}
+.footer1{
+  margin-top: 30%;
+}

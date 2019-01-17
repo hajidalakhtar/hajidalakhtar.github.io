@@ -1,0 +1,48 @@
+.jumbotron {
+  position: relative;
+  color: white;
+  background-image: url(../img/be.jpg);
+  background-size: ;
+  height: 800px;
+}
+
+.jumbotron h1 {
+  color: #FF533F;
+  margin-top: 200px;
+  position: absolute;
+  text-align: width: 100%;
+}
+
+.jumbotron h4 {
+  color: white;
+  margin-top: 300px;
+  position: absolute;
+
+  text-shadow: 2px 2px 3px black;
+}
+
+#client {
+background-color: #263238;
+padding-bottom: 100px;
+
+}
+
+.imgjumbotron {
+  position: absolute;
+  z-index: 2;
+  width: 300px;
+  margin-left: 500px;
+  margin-top: 100px;
+}
+
+.imgjumbotron1 {
+  position: absolute;
+  z-index: 1;
+  width: 300px;
+  margin-left: 600px;
+  margin-top: 30px;
+}
+
+.s2 {
+  animation-delay: 0.15s;
+}

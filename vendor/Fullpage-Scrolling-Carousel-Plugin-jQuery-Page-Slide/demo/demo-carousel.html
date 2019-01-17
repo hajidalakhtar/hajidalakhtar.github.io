@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>jQuery Page Slide: Carousel Demo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style2.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="../js/jquery.pageSlide.js"></script>
+    </head>
+    <body>
+        <div class="box">
+            <div>
+                <div style="background-color: red;">
+                    <div id="wrapper">
+                    <div class="section">
+                    
+                     <section class=" bg-secondary portfolio" id="skill">
+                        <div class="container">
+                          <h2 class=" text-center text-uppercase text-white mb-0">My Skill</h2>
+                          <hr class="star-light mb-5">
+                          
+                                <div class="row">
+                              <div class="container">
+                                  <div class="row">
+                                      <div class="col-md-12">
+                                          <div class="skillbar" data-percent="70%">
+                                              <div class="skillbar-title">Laravel</div>
+                                              <div class="skill-bar-percent">70%</div>
+                                              <div class="skillbar-bar" style="width: 70%;"></div>
+                                          </div>
+                    
+                                          <div class="skillbar" data-percent="40%">
+                                                <div class="skillbar-title">Express Js</div>
+                                                <div class="skill-bar-percent">40%</div>
+                                                <div class="skillbar-bar" style="width: 40%;"></div>
+                                            </div>
+                    
+                                            <div class="skillbar" data-percent="20%">
+                                                <div class="skillbar-title">React Native</div>
+                                                <div class="skill-bar-percent">20%</div>
+                                                <div class="skillbar-bar" style="width: 20%;"></div>
+                                            </div>
+                    
+                                            <div class="skillbar" data-percent="60%">
+                                                <div class="skillbar-title">Vue js</div>
+                                                <div class="skill-bar-percent">60%</div>
+                                                <div class="skillbar-bar" style="width: 60%;"></div>
+                                            </div>
+                                            <div class="skillbar " data-percent="40%">
+                                                <div class="skillbar-title">React</div>
+                                                <div class="skill-bar-percent">40%</div>
+                                                <div class="skillbar-bar" style="width: 40%;"></div>
+                                            </div>
+                                            <div class="skillbar " data-percent="90%">
+                                                <div class="skillbar-title">Bootstrap</div>
+                                                <div class="skill-bar-percent">90%</div>
+                                                <div class="skillbar-bar" style="width: 90%;"></div>
+                                            </div>
+                                            <div class="skillbar " data-percent="70%">
+                                                <div class="skillbar-title">GIT</div>
+                                                <div class="skill-bar-percent">90%</div>
+                                                <div class="skillbar-bar" style="width: 90%;"></div>
+                                            </div>
+                                          
+                                        </div>
+                                    </div>
+                        </div>
+                      </section>
+                    </div>
+                    
+                       
+                    </div></div>
+                <div style="background-color: orange;">Page2</div>
+                <div style="background-color: blue;">Page3</div>
+                <div style="background-color: yellow;">Page4</div>
+            </div>
+            <button type="button" class="prev"></button>
+            <button type="button" class="next"></button>
+        </div>
+    </body>
+
+    <!-- script -->
+   
+    <script>
+
+        $(document).ready(function () {
+                    $('.box').pageSlide({
+                        fullPage: false, // 全屏设置为false，模式变更为轮播图
+                        direction: 'horizontal', // 设置滚动方向
+                        width: 1350, // 设置轮播图尺寸
+                        height: 650, // 设置轮播图尺寸
+                        autoSlide: true, // 设置自动滚动
+                        navigationEvent: 'mouseclick' // 设置触发导航的事件
+                    });
+                });
+                  </script>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>

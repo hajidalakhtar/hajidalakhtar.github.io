@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body style="overflow-x:hidden">
+    <!-- ==================================================BY Hajid Al akhtar============================================== -->
+        <div id="app">
+          <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" href="#">Action 1</a>
+                    <a class="dropdown-item" href="#">Action 2</a>
+                  </div>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+              </form>
+            </div>
+          </nav>
+          <!-- ================================akhit navbar=================================== -->
+              <div class="text-center container mt-5" style="width:100%" >
+                  <input type="text" class="form-control" placeholder="mau nyari gif apa?" v-model="cari" @keyup.enter ='pesan'>
+                </div>
+                <br>
+                
+                <section v-if="errored">
+                    <p>Maaf lagi ada error</p>
+                </section>
+                
+                <section v-else>
+                    <div v-if="loading" class="text-center h1">Loading...</div>
+                    
+                    <div v-else >
+
+                    <div class="row justify-content-center" >
+                        <div class="col-md-10" >
+                      <div v-for="data in data" >
+                        <a   v-bind:href="data.images.preview_webp.url" target="_blank" > <img style=" float: left; width: 100px; height: 100px; position: blok;" class="" v-bind:src="data.images.preview_webp.url"  ></a>
+                         
+                        </div>
+                    </div>
+
+                  </div>
+                   
+                 
+                  </div>
+              
+                </section>
+              </div>
+    
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+<script>
+new Vue({
+  el: '#app',
+  data () {
+    return {
+      data: null,
+      loading: true,
+      errored: false,
+      cari:null
+      
+    }
+  },
+  methods: {
+    pesan() {
+      
+      var app = this
+    // axios.get('https://api.giphy.com/v1/gifs/trending?api_key=yWMNf9zPUng3urXYNHSmHCDrT4CzSlD7&limit=100&rating=G')
+    axios.get('http://api.giphy.com/v1/gifs/search?q='+app.cari+'&api_key=yWMNf9zPUng3urXYNHSmHCDrT4CzSlD7&limit=100&offset=0&rating=G&lang=en')
+      .then(response => {
+        app.data = response.data.data
+          
+      })
+      .catch(error => {
+        console.log(error)
+        app.errored = true
+      })
+      .finally(() => app.loading = false)
+    }
+  },
+
+  mounted () {
+    
+    var app = this
+    axios.get('https://api.giphy.com/v1/gifs/trending?api_key=yWMNf9zPUng3urXYNHSmHCDrT4CzSlD7&limit=200&rating=G')
+    // axios.get('http://api.giphy.com/v1/gifs/search?q='+app.cari+'&api_key=yWMNf9zPUng3urXYNHSmHCDrT4CzSlD7&limit=5')
+      .then(response => {
+        app.data = response.data.data
+          
+      })
+      .catch(error => {
+        console.log(error)
+        app.errored = true
+      })
+      .finally(() => app.loading = false)
+  },
+
+})
+</script>
+
+</html>

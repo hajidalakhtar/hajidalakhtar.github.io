@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>jQuery Page Slide: Callback Demo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style2.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="../js/jquery.pageSlide.js"></script>
+    </head>
+    <body>
+        <div class="box">
+            <div>
+                <div style="background-color: red;">Page1</div>
+                <div style="background-color: orange;">Page2</div>
+                <div style="background-color: blue;"><span class="text">Page3</span></div>
+                <div style="background-color: yellow;">Page4</div>
+            </div>
+            <button type="button" class="prev"></button>
+            <button type="button" class="next"></button>
+        </div>
+    </body>
+
+    <!-- script -->
+    <script>
+        $(document).ready(function () {
+            $('.box').pageSlide({
+                fullPage: false,
+                direction: 'horizontal',
+                width: 600,
+                height: 400,
+                autoSlide: true,
+                callback: function (index) {
+                    if (index === 2) {
+                        alert('Page 2');
+                    } else if (index === 3) {
+                        $('.text').toggleClass('active');
+                    } else if (index === 4) {
+                        $('.text').toggleClass('active');
+                    }
+                }
+            });
+        });
+    </script>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>
