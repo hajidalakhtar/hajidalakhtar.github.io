@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tags-template-js",
+    "path": "/tags/kebahagiaan/",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":2,"nodes":[{"fields":{"slug":"/blog/aristokles/"},"frontmatter":{"date":"February 20, 2021","description":null,"tags":["KEBAHAGIAAN"],"title":"Aristokles (Plato)"},"timeToRead":8,"excerpt":"Aristokles atau lebih di kenal dengan plato (lahir sekitar 427 SM - meninggal sekitar 347 SM) adalah seorang filsuf dan matematikawan Yunani…"},{"fields":{"slug":"/blog/al-farabi/"},"frontmatter":{"date":"February 20, 2021","description":"Abū Nasir Muhammad bin al-Farakh al-Fārābi' (870-950, Bangsa Turk Farabi ) singkat Al-Farabi adalah ilmuwan dan filsuf Islam berasal dari Farab","tags":["KEBAHAGIAAN"],"title":"Al-Farabi"},"timeToRead":8,"excerpt":"Abū Nasir Muhammad bin al-Farakh al-Fārābi’ (870-950, Bangsa Turk: Farabi ) singkat Al-Farabi adalah ilmuwan dan filsuf Islam berasal dari…"}]}},"pageContext":{"tag":"KEBAHAGIAAN"}},
+    "staticQueryHashes": ["2555585279","2841359383","3159585216"]}

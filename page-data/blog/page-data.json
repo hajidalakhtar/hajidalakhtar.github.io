@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-blog-js",
+    "path": "/blog/",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Gatsby Glass"}},"allMarkdownRemark":{"nodes":[{"fields":{"slug":"/blog/aristokles/"},"excerpt":"Aristokles atau lebih di kenal dengan plato (lahir sekitar 427 SM - meninggal sekitar 347 SM) adalah seorang filsuf dan matematikawan Yunani…","timeToRead":8,"frontmatter":{"date":"February 20, 2021","description":null,"title":"Aristokles (Plato)","tags":["KEBAHAGIAAN"]}},{"fields":{"slug":"/blog/al-farabi/"},"excerpt":"Abū Nasir Muhammad bin al-Farakh al-Fārābi’ (870-950, Bangsa Turk: Farabi ) singkat Al-Farabi adalah ilmuwan dan filsuf Islam berasal dari…","timeToRead":8,"frontmatter":{"date":"February 20, 2021","description":"Abū Nasir Muhammad bin al-Farakh al-Fārābi' (870-950, Bangsa Turk Farabi ) singkat Al-Farabi adalah ilmuwan dan filsuf Islam berasal dari Farab","title":"Al-Farabi","tags":["KEBAHAGIAAN"]}}]}},"pageContext":{}},
+    "staticQueryHashes": ["2555585279","2841359383","3159585216"]}
