@@ -1,12 +1,13 @@
 ---
 title: About Mee
 template: about-template
-profile_image: /media/profile-image.jpg
+profile_image: /media/profile-image.jpeg
 ---
 
-# Hi, I'm John Doe
+### Halo, saya Muhammad hajid Al Akhtar
 
-This website is a live example of a Gatsby Starter — it's not a real blog.
-People using this starter may want to add some information to this page about them or their business.
+Salam kenal, saya susah diam, biasanya berpikir, menulis atau bikin sesuatu, ada yang berhasil banyak yang tidak.  
+
+[Linkedin](https://www.linkedin.com/in/hajidalakhtar/) | [Github](https://github.com/hajidalakhtar) | [Instagram](https://www.instagram.com/hajid_alakhtar/)
 
 

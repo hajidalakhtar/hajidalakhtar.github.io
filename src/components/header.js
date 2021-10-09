@@ -21,7 +21,7 @@ const Header = () => {
     <StyledHeader>
       <HeaderWrapper>
         <HeaderTitle>
-          <Link to="/">{site.siteMetadata.title}</Link>
+          <Link to="/">Hajid Al Akhtar</Link>
         </HeaderTitle>
 
         <HeaderNavList>

@@ -3,6 +3,6 @@ template: 'index-template'
 title: 'Gatsby Starter Glass'
 ---
 
-#Hello World
+#Selamat Datang
 
-A minimal & beautiful gatsby personal blog starter with nice glassmorphism UI.
+ini adalah sebuah website untuk memperkenalkan saya ke dunia dan beberapa hobi saya dalam menulis
